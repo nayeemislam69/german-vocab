@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deutsches Wörterbuch</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="top-header">
+
+  <div class="logo-section" onclick="toggleAbout()">
+    <img src="n2.jpeg" alt="Logo" class="logo-img">
+    <h1>Rafi's Wörterbuch</h1>
+</header>
+
+<!-- SIDE ABOUT PANEL -->
+<div id="aboutPanel" class="about-panel">
+  <button class="close-btn" onclick="toggleAbout()">✖</button>
+
+  <h2>About Me</h2>
+<img src="n1.jpeg" alt="Logo" class="logo-img-2">
+  <div id="aboutContent" contenteditable="true">
+    <p>Hello 👋</p>
+    <p>I am Rafikul Islam, in short Rafi and this is my German-Bangla-English dictionary project.</p>
+    <p>You can edit this text anytime.</p>
+  </div>
+
+</div>
+
+<div class="container">
+
+<h1>My German vocabulary <br> <h2> Niveau B1 & B2 </h2> </h1>
+
+<!-- SEARCH -->
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search word...">
+    <button onclick="searchWord()">Search</button>
+</div>
+
+<div id="searchResult"></div>
+
+<!-- SECTION BUTTONS -->
+<div class="section-buttons">
+    <button onclick="showSection(0)">Words (1-100)</button>
+    <button onclick="showSection(1)">Words (101-200)</button>
+    <button onclick="showSection(2)">Words (201-300)</button>
+    <button onclick="showSection(3)">Words (301-400)</button>
+    <button onclick="showSection(4)">Words (401-500)</button>
+    <button onclick="showSection(5)">Words (501-600)</button>
+</div>
+
+<!-- WORD DISPLAY -->
+<div id="wordDisplay"></div>
+
+</div>
+
+<footer class="footer">
+  <p>Thanks for the visit ❤️</p>
+
+  <div class="social-links">
+
+    <a href="https://www.facebook.com/profile.php?id=61587780268691" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+
+    <a href="https://www.instagram.com/nayeem_3378/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/@deutschwelt.nayeem?lang=en" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+
+    <a href="https://wa.me/8801988064328" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
